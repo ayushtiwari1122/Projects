@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  position: relative;
+  
+}
+
+  .round{
+    background:blue ;
+    border-radius:50%;
+    padding: .099rem;
+
+  }
+  .a{
+    
+   
+    select{
+      
+      border: 3px solid blue;
+      border-right: none;
+      padding: 10px 50px;
+      outline: none;
+    
+      border-bottom-left-radius: 10px;
+      
+      border-top-left-radius: 10px;
+      background:rgba(226, 224, 224, 0.825);
+    }
+    input{
+       
+      border: 3px solid blue;
+      border-left: none; 
+      outline: none;
+      background:rgba(226, 224, 224, 0.825);
+
+    
+      padding: 7.5px 100px;
+    }
+  }
+  .good{
+    border: .1px solid gray;
+  }
+ 
+  .de{
+    border-left: 1px solid gray;
+    
+    padding-left: 3rem;
+    margin-right: 1rem;
+
+  }
+  .animate{
+    animation:  ani 3s  .3s 1 ;
+    margin-left: 6rem;
+    margin-bottom: 8rem;
+   @keyframes ani {
+    0%{
+      top: -540px;
+
+    } 
+     
+    100%{
+      top: 20px;
+    }
+   } 
+  }
+  .animates{
+    animation:  an 3s   .3s 1  ;
+    
+   bottom: 10px;
+   margin:0 4rem ;
+   
+   @keyframes an {
+    0%{
+      bottom: -540px;
+
+    } 
+     
+    100%{
+      bottom: 10px;
+    }
+   } 
+  }
+  .ann{
+          animation: a 3s   infinite ;
+  
+    @keyframes a {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(20deg);
+      }
+      
+    }
+  }
+  @media (min-width:678px) {
+    .animates{
+      right: 40px;
+      margin-bottom: 3rem;
+      @keyframes an{
+        0%{
+          bottom: -300px;
+        }
+        100%{
+          bottom:0px
+        }
+
+      } 
+
+    }
+    .animate{
+      left: 70px;
+      top: 60px;
+     
+      @keyframes an {
+        0%{
+          top: -300px;
+        }
+        100%{
+          top: 70px;
+        }
+        
+      }
+    }
+    
+  }
+  .bold{
+    border: 1px solid white;
+    box-shadow: .01px .01px 1px black;
+  
+    margin-top: 1rem;
+    margin-left: 1rem;
+   
+    
+  }
+  .bold1{
+    border: .1px solid black;
+    box-shadow: .01px .01px 1px black;
+    margin-top: 1rem;
+   
+  }
+  .be{
+    background-image: url(https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-1-mobile.jpg);
+    background-size: cover;
+
+    background-position: center center;
+   padding: 50px;
+    
+  .box{
+    padding: 20px 20px 200px 20px;
+    margin-bottom: 60px;
+  }
+    
+  }
+  @media (min-width:768px) {
+    .be{
+      background: url(	https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-1.jpg);
+      background-size: contain;
+      width: 60%;
+      height: 60vh;
+     
+    }
+    .box{
+      margin-right: 400px;
+      margin-top: 20px;
+
+    }
+    
+  }
+  .be1{
+    background: url(https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-2.jpg);
+    background-size: cover;
+
+    background-position: center center;
+   padding: 50px;
+  }
+
+  @media (min-width:768px) {
+    .be1{
+      background: url(https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-2.jpg);
+      background-size: contain;
+      width: 40%;
+      height: 60vh;
+     
+    }
+    .box1{
+     
+   
+    }
+  }
+  .box1{
+   padding: 20px 20px 250px 20px;
+    margin-bottom: 60px; ;
+  }
+  .hide{
+    width: 100%;
+    background:gray
+    ;
+    height: 50vh;
+    position: absolute;
+    z-index: 999;
+
+    @media (min-width:768px) {
+      .hide{
+        display: none;
+      }
+      
+    }
+  }
+.ads{
+  background: url(https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-7.jpg);
+background-position: center center;
+background-size: cover;
+
+}
+.ads1{
+  background: url(	https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-8-2.jpg);
+  
+  background-size: cover;
+  background-position: bottom;
+  @media (min-width:768px) {
+  
+    height: 50vh;
+    width: 25%;
+    background-position: top;
+  }
+}
+
+.ads11{
+  background: url(	https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-9.jpg);
+  
+  background-size: cover;
+  background-position: bottom;
+  @media (min-width:768px) {
+  
+    height: 50vh;
+    width: 25%;
+    background-position: top;
+  }
+}
+.ads12{
+  background: url(	https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-10.jpg );
+  
+  background-size: cover;
+  background-position: bottom;
+  @media (min-width:768px) {
+  
+    height: 50vh;
+    width: 25%;
+    background-position: top;
+  }
+}
+.ads13{
+  background: url(	https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-11.jpg );
+  
+  background-size: cover;
+  background-position: bottom;
+  @media (min-width:768px) {
+  
+    height: 50vh;
+    width: 25%;
+    background-position: top;
+  }
+}
+.bg{
+  background:url(https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/bg-newsletter.jpg );
+  background-size: cover
+  ;
+  input{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+  }
+  button{
+
+  border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+ 
+  }
+}
+.bo{
+  border: solid 2px black;
+  outline: none;
+}
+.opp{
+  img{
+    opacity: 0.2;
+  }
+
+   img:hover{
+    opacity: 1;
+
+   
+
+    }
+  }
